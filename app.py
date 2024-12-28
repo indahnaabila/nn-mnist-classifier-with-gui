@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix
 import time
 
 st.title("Neural Network MNIST Classifier")
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def load_data():
     transform = transforms.ToTensor()
