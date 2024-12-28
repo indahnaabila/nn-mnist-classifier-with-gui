@@ -199,7 +199,7 @@ def main():
     for images,labels in train_loader: 
         break
     jmlh_label = st.sidebar.slider('Show the label :', 1, train_batch_size)
-    st.sidebar.text_input('Labels: ', labels[:jmlh_label].numpy())
+    st.sidebar.text_input('Labels: ', str(labels[:jmlh_label].numpy()))
     im = make_grid(images[:jmlh_label], nrow=12)
     fig = plt.figure(figsize=(10,4))
     plt.imshow(np.transpose(im.numpy(), (1, 2, 0)))
